@@ -1,0 +1,131 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jcarousel.css">
+    <link rel="stylesheet" href="css/cusel.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.cusel.js"></script>
+    <script type="text/javascript" src="js/jquery.jScrollPane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="menu">
+        <div class="item"><a href="#">Nav 1</a></div>
+        <div class="item"><a href="#">Nav 2</a></div>
+        <div class="item open"><a href="#">Nav 3</a>
+            <div class="submenu">
+                <div class="subitem"><a href="">Nav 3.1</a></div>
+                <div class="subitem"><a href="">Nav 3.2</a></div>
+                <div class="subitem"><a href="">Nav 3.3</a></div>
+                <div class="subitem open"><a href="">Nav 3.4</a>
+                    <div class="submenu">
+                        <div class="subitem"><a href="#">Nav 3.4.1</a></div>
+                        <div class="subitem open"><a href="#">Nav 3.4.2</a>
+                            <div class="submenu">
+                                <div class="subitem"><a href="#">Nav 3.4.2.1</a></div>
+                                <div class="subitem"><a href="#">Nav 3.4.2.2</a></div>
+                                <div class="subitem"><a href="#">Nav 3.4.2.3</a></div>
+                                <div class="subitem"><a href="#">Nav 3.4.2.4</a></div>
+                                <div class="subitem"><a href="#">Nav 3.4.2.5</a></div>
+                            </div>
+                        </div>
+                        <div class="subitem"><a href="#">Nav 3.4.3</a></div>
+                        <div class="subitem"><a href="#">Nav 3.4.4</a></div>
+                        <div class="subitem"><a href="#">Nav 3.4.5</a></div>
+                    </div>
+                </div>
+                <div class="subitem"><a href="#">Nav 3.5</a></div>
+            </div>
+        </div>
+        <div class="item"><a href="#">Nav 4</a></div>
+        <div class="item"><a href="#">Nav 5</a></div>
+    </nav>
+    <div class="connected-carousels">
+    <div class="stage">
+        <div class="carousel carousel-stage">
+            <ul>
+                <li><img class="images" src="img/01.jpg" alt=""></li>
+                <li><img class="images" src="img/02.jpg" alt=""></li>
+                <li><img class="images" src="img/03.jpg" alt=""></li>
+                <li><img class="images" src="img/04.jpg" alt=""></li>
+                <li><img class="images" src="img/05.jpg" alt=""></li>
+                <li><img class="images" src="img/06.jpg" alt=""></li>
+                <li><img class="images" src="img/07.jpg" alt=""></li>
+             </ul>
+        </div>
+
+        <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+        <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+    </div>
+        <div class="navigation">
+             <a href="#" class="prev prev-navigation">&lsaquo;</a>
+             <a href="#" class="next next-navigation">&rsaquo;</a>
+          <div class="carousel carousel-navigation">
+                <ul>
+                    <li><img class="images--navi" src="img/01.jpg" alt=""></li>
+                    <li><img class="images--navi" src="img/02.jpg" alt=""></li>
+                    <li><img class="images--navi" src="img/03.jpg" alt=""></li>
+                    <li><img class="images--navi" src="img/04.jpg" alt=""></li>
+                    <li><img class="images--navi" src="img/05.jpg" alt=""></li>
+                    <li><img class="images--navi" src="img/06.jpg" alt=""></li>
+                    <li><img class="images--navi" src="img/07.jpg" alt=""></li>
+                </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="lineForm">
+        <select class="sel80" id="name" name="name">
+            <option selected="selected" value="">Выбери меня...</option>
+            <option value="1">Маша</option>
+            <option value="2">Даша</option>
+            <option value="3">Глаша</option>
+            <option value="4">Настя</option>
+            <option value="5">Оля</option>
+            <option value="6">Люда</option>
+            <option value="7">Катя</option>
+            <option value="8">Вика</option>
+            <option value="9">Ира</option>
+            <option value="10">Наташа</option>
+            <option value="11">Таша</option>
+        </select>
+    </div>
+
+    <div class="boxcheck">
+        <p>js:</p>
+        <span class="check"><input type="checkbox" name="1">Маша</span>
+        <span class="check"><input type="checkbox" name="1">Даша</span>
+        <span class="check"><input type="checkbox" name="1">Глаша</span>
+        <span class="check"><input type="checkbox" name="1">Настя</span>
+        <span class="check"><input type="checkbox" name="1">Оля</span>
+        <span class="check"><input type="checkbox" name="1">Таша</span>
+    </div>
+
+    <div class="boxcss">
+        <p>css:</p>
+       <input type="checkbox" id="roni">
+        <label for="roni">Roni</label>
+        <input type="checkbox" id="doni">
+        <label for="doni">Doni</label>
+        <input type="checkbox" id="loni">
+        <label for="loni">Loni</label>
+    </div>
+
+
+</div>
+</body>
+
+</html>

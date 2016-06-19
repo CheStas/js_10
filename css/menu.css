@@ -1,0 +1,71 @@
+.menu {
+    width: 80%;
+    margin: 0 10% 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF6464;
+    font-weight: 900;
+}
+
+.submenu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: -54px;
+    background-color: #E14B4B;
+    z-index: 2;
+}
+
+.subitem {
+    position: relative;
+    margin: 0;
+}
+
+.submenu .subitem .submenu {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    margin: 0;
+}
+
+.item {
+    position: relative;
+}
+
+a {
+    display: flex;
+    width: 80px;
+    padding: 7px 0;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(50, 50, 50);
+}
+
+.subitem a {
+    width: 100%;
+    border-bottom: solid 2px #000;
+}
+
+.open:after {
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 13px;
+    left: 65px;
+    background: url('../img/arrow-down.png') no-repeat center right;
+    content: '';
+}
+
+.submenu .open:after {
+    transform: rotate(270deg);
+    left: 130px;
+}
+
+.submenu .submenu .open:after {
+    left: 135px;
+}

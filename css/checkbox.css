@@ -1,0 +1,58 @@
+.boxcheck {
+    margin: 10px 45% 10px 45%;
+    display: flex;
+    flex-direction: column;
+}
+.check {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: url(../img/checkbox.png) no-repeat;
+}
+
+.check input {
+    display: none;
+}
+
+/*boxcss*/
+
+.boxcss {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 45% 10px 45%;
+}
+
+.boxcss input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.boxcss label {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.boxcss label:before {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox.png);
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+.boxcss input[type=checkbox]:checked + label:before {
+    background-position: 0 -17px;
+}
+
+.boxcss label:hover:before {
+    background-position: 0 -34px;
+}
+
+.boxcss input[type=checkbox]:checked + label:hover:before {
+    background-position: 0 -51px;
+}
